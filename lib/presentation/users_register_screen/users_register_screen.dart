@@ -290,6 +290,10 @@ class _UsersRegisterScreenState extends State<UsersRegisterScreen> {
       text: "PRÓXIMO",
       margin: EdgeInsets.symmetric(horizontal: 46.h),
       onPressed: _goToNextScreen,
+      buttonStyle: ElevatedButton.styleFrom(
+        backgroundColor: const Color(0xFF73CAAD), // Cor verde do botão
+        // foregroundColor: Colors.white, // Caso queira o texto em branco
+      ),
     );
   }
 }

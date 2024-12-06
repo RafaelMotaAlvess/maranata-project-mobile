@@ -39,7 +39,9 @@ class UserListItemWidget extends StatelessWidget {
               children: [
                 Text(
                   patient.name,
-                  style: theme.textTheme.bodyLarge,
+                  style: theme.textTheme.bodyLarge?.copyWith(
+                    color: Colors.black,
+                  ),
                 ),
                 SizedBox(height: 4),
                 Text(

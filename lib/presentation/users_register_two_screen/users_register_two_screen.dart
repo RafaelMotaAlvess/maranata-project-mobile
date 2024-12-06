@@ -403,6 +403,9 @@ class _UsersRegisterTwoScreenState extends State<UsersRegisterTwoScreen> {
       text: "PRÓXIMO",
       margin: EdgeInsets.symmetric(horizontal: 46.h),
       onPressed: _submitRegistration,
+      buttonStyle: ElevatedButton.styleFrom(
+        backgroundColor: const Color(0xFF73CAAD),
+      ),
     );
   }
 }

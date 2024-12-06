@@ -43,7 +43,9 @@ class WaitlistsectionItemWidget extends StatelessWidget {
                   patient.name,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: CustomTextStyles.bodyLargePoppins_l,
+                  style: CustomTextStyles.bodyLargePoppins_l.copyWith(
+                    color: Colors.black,
+                  ),
                 ),
                 Text(
                   "Solicitado: ${patient.createdAt != null ? patient.createdAt!.toLocal().toString().split(' ')[0] : 'Desconhecido'}",
